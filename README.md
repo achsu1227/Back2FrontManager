@@ -2,3 +2,19 @@
 
 # Back2FrontManager
 android detected Background to Front
+
+Add it in your root build.gradle at the end of repositories:
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+Add the dependency:
+```
+dependencies {
+	        implementation 'com.github.achsu1227:Back2FrontManager:Tag'
+}
+```

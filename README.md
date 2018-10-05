@@ -18,3 +18,20 @@ dependencies {
 	        implementation 'com.github.achsu1227:Back2FrontManager:Tag'
 }
 ```
+
+how to use:
+```
+public class MainApp extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+	// user Back2FrontManager to add Kit event.
+        Back2FrontManager.with(new Back2FrontManager.Builder(this).addKit(new Kit() {
+            @Override
+            public void execute(Activity activity) {
+                Log.e("hello", "hello");
+            }
+        }));
+    }
+}
+```
